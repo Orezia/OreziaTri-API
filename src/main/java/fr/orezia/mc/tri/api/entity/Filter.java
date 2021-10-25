@@ -18,7 +18,7 @@ import org.jetbrains.annotations.Nullable;
  */
 @PublicApi
 public record Filter(@NotNull Location location, @NotNull List<@NotNull ItemStack> items,
-                     boolean strictness) {
+                     int priority, boolean strictness) {
 
   /**
    * {@inheritDoc}

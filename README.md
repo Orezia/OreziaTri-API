@@ -4,7 +4,7 @@
 ![MC version](https://img.shields.io/badge/MC-v1.17-blue)
 [![GitHub release](https://img.shields.io/badge/release-v1.0-blue)](https://github.com/Orezia/OreziaTri-api/releases/tag/1.0)
 
-[version française](./LISEZMOI.md)
+[Version française](./LISEZMOI.md)
 
 ## Table of contents :
 
