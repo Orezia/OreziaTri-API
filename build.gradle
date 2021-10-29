@@ -9,6 +9,8 @@ version = '1.0-SNAPSHOT'
 java {
     sourceCompatibility(JavaVersion.VERSION_16)
     targetCompatibility(JavaVersion.VERSION_16)
+    withJavadocJar()
+    withSourcesJar()
 }
 
 repositories {
@@ -20,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    api "fr.orezia.mc:OreziaCore-api:1.0-SNAPSHOT"
+    api "fr.orezia.mc:oreziacore-api:1.0-SNAPSHOT"
 }
 
 publishing {
