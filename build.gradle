@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    api "fr.orezia.mc:OreziaCore-api:1.0-SNAPSHOT"
+    api "fr.orezia.mc:oreziacore-api:1.0-SNAPSHOT"
 }
 
 publishing {
