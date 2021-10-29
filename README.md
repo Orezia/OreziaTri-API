@@ -4,7 +4,7 @@
 ![MC version](https://img.shields.io/badge/MC-v1.17-blue)
 [![GitHub release](https://img.shields.io/badge/release-v1.0-blue)](https://github.com/Orezia/OreziaTri-api/releases/tag/1.0)
 
-[version française](./LISEZMOI.md)
+[Version française](./LISEZMOI.md)
 
 ## Table of contents :
 
@@ -13,8 +13,7 @@
 
 ## Integrating :
 
-In order to integrate your plugin with OreziaTri, you have to `OreziaTri-api` as dependency of your
-project.
+In order to integrate your plugin with OreziaTri, you have to `OreziaTri-api` as dependency of your project.
 
 Gradle :
 
@@ -33,13 +32,11 @@ dependencies {
 
 ### Soft-depend
 
-In order to add OreziaTri as soft-depend, you have to shade the dependency `OreziaTri-api` in your
-plugin (Include the dependency in your plugin JAR).
+In order to add OreziaTri as soft-depend, you have to shade the dependency `OreziaTri-api` in your plugin (Include the dependency in your plugin JAR).
 
 ### Hard-depend
 
-If your plugin hard-depend on OreziaTri, you can consider the dependency `OreziaTri-api` as
-provided.
+If your plugin hard-depend on OreziaTri, you can consider the dependency `OreziaTri-api` as provided.
 
 ## Version :
 

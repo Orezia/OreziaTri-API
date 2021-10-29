@@ -15,8 +15,7 @@
 
 ## Intégration :
 
-Afin d'intégrer votre plugin avec OreziaTri, vous devez ajouter `OreziaTri-api` comme dépendance de
-votre projet.
+Afin d'intégrer votre plugin avec OreziaTri, vous devez ajouter `OreziaTri-api` comme dépendance de votre projet.
 
 Gradle :
 
@@ -35,13 +34,11 @@ dependencies {
 
 ### Soft-depend :
 
-Afin d'ajouter OreziaTri comme soft-depend, vous devez embarquer la dépendance `OreziaTri-api` avec
-votre plugin (Inclure la dépendance dans le JAR de votre plugin).
+Afin d'ajouter OreziaTri comme soft-depend, vous devez embarquer la dépendance `OreziaTri-api` avec votre plugin (Inclure la dépendance dans le JAR de votre plugin).
 
 ### Hard-depend :
 
-Si votre plugin dépend (hard-depend) d'OreziaTri, vous pouvez considérer la
-dépendance `OreziaTri-api` comme fournit ("provided").
+Si votre plugin dépend (hard-depend) d'OreziaTri, vous pouvez considérer la dépendance `OreziaTri-api` comme fournit ("provided").
 
 ## Version :
 
