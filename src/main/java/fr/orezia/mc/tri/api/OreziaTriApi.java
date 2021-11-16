@@ -37,8 +37,7 @@ public interface OreziaTriApi extends OreziaPluginApi {
    */
   @PublicApi
   @Contract(value = "_ -> new", pure = true)
-  @NotNull Optional<@NotNull List<@NotNull ItemStack>> getPlayerBlacklist(
-      final @NotNull UUID uniqueId);
+  @NotNull Optional<List<@NotNull ItemStack>> getPlayerBlacklist(final @NotNull UUID uniqueId);
 
   /**
    * Returns whether the given item can be placed in the given inventory or not, only considering
