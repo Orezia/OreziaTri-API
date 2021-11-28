@@ -4,7 +4,7 @@
 ![MC version](https://img.shields.io/badge/MC-v1.17-blue)
 [![GitHub release](https://img.shields.io/badge/release-v1.0-blue)](https://github.com/Orezia/OreziaTri-api/releases/tag/1.0)
 
-[![Publish package to Github Packages](https://github.com/Orezia/OreziaTri-API/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/Orezia/OreziaTri-API/actions/workflows/gradle.yml)
+[![Publish package to GitHub Packages](https://github.com/Orezia/OreziaTri-API/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/Orezia/OreziaTri-API/actions/workflows/gradle.yml)
 
 [English version](./README.md)
 
