@@ -52,7 +52,11 @@ java {
 
 repositories {
     this.mavenLocal()
-    this.mavenCentral()
+    this.mavenCentral {
+        this.content {
+            this.excludeGroup("fr.orezia.mc")
+        }
+    }
     this.maven {
         this.name = "GitHubPackages"
         this.url = uri("https://maven.pkg.github.com/Orezia/OreziaCore-API")
@@ -60,9 +64,15 @@ repositories {
             this.username = githubUsername
             this.password = githubToken
         }
+        this.content {
+            this.includeGroup("fr.orezia.mc")
+        }
     }
     this.maven {
         this.url = uri("https://papermc.io/repo/repository/maven-public/")
+        this.content {
+            this.excludeGroup("fr.orezia.mc")
+        }
     }
 }
 
