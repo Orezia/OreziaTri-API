@@ -31,6 +31,7 @@ Maven :
   </repository>
 </repositories>
 ```
+
 ```xml
 <dependencies>
   <dependency>
@@ -51,6 +52,7 @@ repositories {
     }
 }
 ```
+
 ```groovy
 dependencies {
     implementation group: 'fr.orezia.mc', name: 'OreziaTri-API', version: VERSION
@@ -68,4 +70,7 @@ If your plugin is hard-dependent on `OreziaTri`, you can consider the dependency
 ## Version :
 
 - __1.0__
-  - TODO
+  - \+ Function to check if an item can be placed into an inventory
+  - \+ Function to get the blacklist of a player
+  - \+ Function to get a filter from an inventory
+  - \+ Definition of a filter

@@ -31,6 +31,7 @@ Maven :
   </repository>
 </repositories>
 ```
+
 ```xml
 <dependencies>
   <dependency>
@@ -51,6 +52,7 @@ repositories {
     }
 }
 ```
+
 ```groovy
 dependencies {
     implementation group: 'fr.orezia.mc', name: 'OreziaTri-API', version: VERSION
@@ -68,4 +70,7 @@ Si votre plugin est hard-dépendant d'`OreziaTri`, vous pouvez considérer la d�
 ## Version :
 
 - __1.0__
-  - TODO
+  - \+ Fonction pour vérifier qu'un item peut être placé dans un inventaire
+  - \+ Fonction pour récupérer la blacklist d'un joueur
+  - \+ Fonction pour récupérer le filtre d'un inventaire
+  - \+ Définition d'un filtre
