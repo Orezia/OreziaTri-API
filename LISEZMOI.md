@@ -1,47 +1,76 @@
-# OreziaTri API publique
+# Orezia Tri API
 
-![Java version](https://img.shields.io/badge/java-^16-green)
-![MC version](https://img.shields.io/badge/MC-v1.17-blue)
-[![GitHub release](https://img.shields.io/badge/release-v1.0-blue)](https://github.com/Orezia/OreziaTri-api/releases/tag/1.0)
+![Java version](https://img.shields.io/badge/java-^17-yellow)
+![MC version](https://img.shields.io/badge/MC-v1.18.1-green)
+[![GitHub release](https://img.shields.io/badge/release-vX-blue)](https://github.com/dederobert/OreziaTri-API/releases/tag/X)
 
-[![Publish package to GitHub Packages](https://github.com/Orezia/OreziaTri-API/actions/workflows/gradle.yml/badge.svg?branch=main)](https://github.com/Orezia/OreziaTri-API/actions/workflows/gradle.yml)
+[![Maven build](https://github.com/Orezia/OreziaTri-API/actions/workflows/maven_build.yml/badge.svg)](https://github.com/Orezia/OreziaTri-API/actions/workflows/maven_build.yml)
+
+API publique pour le plugin `OreziaTri`.
 
 [English version](./README.md)
 
 ## Table des matières :
 
-- [Intégration](#intgration-)
-    - [Soft-depend](#soft-depend-)
-    - [Hard-depend](#hard-depend-)
+- [Intégration](#intergration-)
+  - [Soft-dépendance](#soft-dependance-)
+  - [Hard-dépendance](#hard-dependance-)
 - [Version](#version-)
 
 ## Intégration :
 
-Afin d'intégrer votre plugin avec OreziaTri, vous devez ajouter `OreziaTri-api` comme dépendance de votre projet.
+Pour intégrer votre plugin avec `OreziaTri`, vous devez ajouter `OreziaTri-API` parmi les dépendances de votre projet.
+
+Maven :
+
+```xml
+<repositories>
+  <repository>
+    <id>github-orezia-tri-api</id>
+    <url>https://maven.pkg.github.com/Orezia/OreziaTri-API</url>
+  </repository>
+</repositories>
+```
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>fr.orezia.mc</groupId>
+    <artifactId>oreziatri-api</artifactId>
+    <version>VERSION</version>
+  </dependency>
+</dependencies>
+```
 
 Gradle :
 
 ```groovy
 repositories {
     maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/Orezia/OreziaTri")
+        name = "GithubOreziaTriApi"
+        url = uri("https://maven.pkg.github.com/Orezia/OreziaTri-API")
     }
-}
-
-dependencies {
-    implementation group: 'fr.orezia.mc', name: 'OreziaTri-api', version: VERSION
 }
 ```
 
-### Soft-depend :
+```groovy
+dependencies {
+    implementation group: 'fr.orezia.mc', name: 'OreziaTri-API', version: VERSION
+}
+```
 
-Afin d'ajouter OreziaTri comme soft-depend, vous devez embarquer la dépendance `OreziaTri-api` avec votre plugin (Inclure la dépendance dans le JAR de votre plugin).
+### Soft-dépendance
 
-### Hard-depend :
+Pour être soft-dépendant d'`OreziaTri`, vous devez embarquer la dépendance `OreziaTri-API` dans votre plugin (c'est-à-dire inclure la dépendance dans le JAR de votre plugin).
 
-Si votre plugin dépend (hard-depend) d'OreziaTri, vous pouvez considérer la dépendance `OreziaTri-api` comme fournit ("provided").
+### Hard-dépendance :
+
+Si votre plugin est hard-dépendant d'`OreziaTri`, vous pouvez considérer la dépendance `OreziaTri-API` comme "provided".
 
 ## Version :
 
-- __1.0__: Version initiale
+- __1.0__
+  - \+ Fonction pour vérifier qu'un item peut être placé dans un inventaire
+  - \+ Fonction pour récupérer la blacklist d'un joueur
+  - \+ Fonction pour récupérer le filtre d'un inventaire
+  - \+ Définition d'un filtre
