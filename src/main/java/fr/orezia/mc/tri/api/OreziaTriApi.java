@@ -20,10 +20,10 @@ import org.jetbrains.annotations.NotNull;
 public interface OreziaTriApi extends OreziaPluginApi {
 
   /**
-   * Gets the filter of the given inventory (if there is one).
+   * Gets the {@link Filter filter} of the given {@link Inventory inventory} (if there is one).
    *
-   * @param inventory The inventory
-   * @return the optional filter of the given inventory
+   * @param inventory the {@link Inventory inventory}
+   * @return the optional {@link Filter filter} of the given {@link Inventory inventory}
    */
   @PublicApi
   @Contract(value = "_ -> new", pure = true)
@@ -32,25 +32,24 @@ public interface OreziaTriApi extends OreziaPluginApi {
   /**
    * Gets the blacklist of the player corresponding to the given unique ID.
    *
-   * @param uniqueId The player's unique ID
+   * @param uniqueId the player's unique ID
    * @return the blacklist of the player
    */
   @PublicApi
   @Contract(value = "_ -> new", pure = true)
-  @NotNull Optional<List<@NotNull ItemStack>> getPlayerBlacklist(final @NotNull UUID uniqueId);
+  @NotNull List<@NotNull ItemStack> getPlayerBlacklist(final @NotNull UUID uniqueId);
 
   /**
-   * Returns whether the given item can be placed in the given inventory or not, only considering
-   * the eventual filter linked to this inventory.
+   * Returns whether the given {@link ItemStack item} can be placed in the given {@link Inventory inventory} or not,
+   * only considering the eventual {@link Filter filter} linked to this {@link Inventory inventory}.
    *
-   * @param item      The item
-   * @param inventory The inventory
-   * @return {@code true} if the filter doesn't prevent the item to be placed in the inventory,
-   * {@code false} otherwise.
+   * @param item      the {@link ItemStack item}
+   * @param inventory the {@link Inventory inventory}
+   * @return {@code true} if no {@link Filter filter} prevents the {@link ItemStack item} to be placed in the {@link
+   * Inventory inventory}, {@code false} otherwise.
    */
   @PublicApi
   @Contract(pure = true)
-  boolean isItemAllowedInInventory(final @NotNull ItemStack item,
-      final @NotNull Inventory inventory);
+  boolean isItemAllowedInInventory(final @NotNull ItemStack item, final @NotNull Inventory inventory);
 
 }
